@@ -6,7 +6,6 @@ class Dashboard extends Component {
       <div className="dash">
 <br />
 <br />
-
 <br />
 <br />
 
@@ -27,7 +26,6 @@ class Dashboard extends Component {
           </div>
 <br />
 <br />
-
 <br />
 <br />
           <div className="row">
@@ -44,8 +42,8 @@ class Dashboard extends Component {
               <h2>References</h2>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
     );
   }

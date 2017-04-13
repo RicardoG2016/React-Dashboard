@@ -24,14 +24,19 @@ export default class NavBar extends React.Component {
 
                         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                           <ul className="nav navbar-nav">
-                            <li className="active"><a href="#"><img className="img" src="../images/alarm.png" alt="Generic placeholder image" width="20" height="20" /> <span className="sr-only">(current)</span></a></li>
-                            <li><a href="#"><img className="img" src="../images/gift.png" alt="Generic placeholder image" width="20" height="20" /></a></li>
+                            <form className="navbar-form navbar-left" role="search">
+                              <div className="form-group">
+                                <input type="text" className="form-control" placeholder="Search" />
+                              </div>
+                              <button type="submit" className="btn btn-default">Submit</button>
+                            </form>
+                          </ul>
+
+                          <ul className="nav navbar-nav navbar-right">
+                          <li><a href="#">PREMIUM</a></li>
                             <li className="dropdown">
                               <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img className="img" src="../images/m.png" alt="Generic placeholder image" width="20" height="20" /> </a>
                               <ul className="dropdown-menu" role="menu">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Account</a></li>
-                                <li className="divider"></li>
                                 <li><a href="#">Review</a></li>
                                 <li><a href="#">Social</a></li>
                                 <li><a href="#">Jobs</a></li>
@@ -45,19 +50,14 @@ export default class NavBar extends React.Component {
                                 <li><a href="#">Settings</a></li>
                               </ul>
                             </li>
-                            <form className="navbar-form navbar-left" role="search">
-                              <div className="form-group">
-                                <input type="text" className="form-control" placeholder="Search" />
-                              </div>
-                              <button type="submit" className="btn btn-default">Submit</button>
-                            </form>
-                          </ul>
-
-                          <ul className="nav navbar-nav navbar-right">
+                            <li><a href="#"><img className="img" src="../images/chat.png" alt="Generic placeholder image" width="20" height="20" /></a></li>
+                            <li><a href="#"><img className="img" src="../images/gift.png" alt="Generic placeholder image" width="20" height="20" /></a></li>
+                            <li className="active"><a href="#"><img className="img" src="../images/alarm.png" alt="Generic placeholder image" width="20" height="20" /> <span className="sr-only">(current)</span></a></li>
                             <li><a href="#">Sign In</a></li>
                             <li><a href="#">|</a></li>
                             <li><a href="#">Sign Up</a></li>
                           </ul>
+
                         </div>
                       </div>
                     </nav>
