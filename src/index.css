@@ -17,6 +17,11 @@ nav.navbar.navbar-default{
   padding-left: 15px;
   padding-right: 15px;
 }
+
+a.navbar-brand.word{
+  padding-left: 3px;
+  color: #07c284;
+}
 /**/
 
 /*searchbar*/
@@ -69,5 +74,12 @@ nav.navbar.navbar-default{
   color: #3596e0;
   left: initial;
   font-size: 14px;
+}
+/**/
+
+/*Dashboard*/
+li > a.premium{
+  color: #e47911 !important;
+  font-weight: bold;
 }
 /**/

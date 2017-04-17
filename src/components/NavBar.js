@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+
 // import { Nav, Button, ButtonGroup, NavDropdown, NavItem, MenuItem } from 'react-bootstrap';
 
 export default class NavBar extends React.Component {
@@ -19,7 +25,11 @@ export default class NavBar extends React.Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                           </button>
-                          <a className="navbar-brand" href="#">PCM</a>
+                          
+                          <Link to="/home">
+                            <a className="navbar-brand"><img className="img" src="../images/logo.png" alt="Generic placeholder image" width="20" height="20" /></a>
+                            <span className="navbar-brand word">eribit.io</span>
+                          </Link>
                         </div>
 
                         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -33,7 +43,7 @@ export default class NavBar extends React.Component {
                           </ul>
 
                           <ul className="nav navbar-nav navbar-right">
-                          <li><a href="#">PREMIUM</a></li>
+                          <li><a className="premium" href="#">PREMIUM</a></li>
                             <li className="dropdown">
                               <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img className="img" src="../images/m.png" alt="Generic placeholder image" width="20" height="20" /> </a>
                               <ul className="dropdown-menu" role="menu">
