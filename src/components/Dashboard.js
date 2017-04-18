@@ -4,65 +4,73 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import Section from './Section';
 
 class Dashboard extends React.Component {
   render() {
+  const dash={
+    review: {
+      title: "Review",
+      img: "../images/list.png",
+      route: "/review"  
+    },
+      social: {
+        title: "Social",
+        img: "../images/fb.png",
+        route: "/social"     
+      },
+      jobsearch: {
+        title: "Job Search",
+        img: "../images/briefcase.png",
+        route: "/jobsearch"     
+      },
+      projects: {
+        title: "Projects",
+        img: "../images/macbook.png",
+        route: "/projects"     
+      },
+      docs: {
+        title: "Docs",
+        img: "../images/folder.png",
+        route: "/docs"     
+      },
+      references: {
+        title: "References",
+        img: "../images/id-card.png",
+        route: "/reference"     
+      },
+  };
+
+  const social = dash.social
+  const jobsearch = dash.jobsearch
+  const projects = dash.projects
+  const review = dash.review
+  const docs = dash.docs
+  const references = dash.references
+
+
+
     return (
       <div className="dash">
-        
         <br />
         <br />
         <br />
         <br />
-
         <div className="container marketing">
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <Link to="/review">
-                <img className="img" src="../images/list.png" alt="Generic placeholder image" width="140" height="140" />
-                <h2>Review</h2>
-              </Link>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <Link to="/social">
-                <img className="img" src="../images/fb.png" alt="Generic placeholder image" width="140" height="140" />
-                <h2>Social</h2>
-              </Link>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <Link to="/jobsearch">
-                <img className="img" src="../images/briefcase.png" alt="Generic placeholder image" width="140" height="140" />
-                <h2>Job Search</h2>
-              </Link>
-            </div>
-          </div>
-
+            <Section title={review.title} route={review.route} img={review.img}/>
+            <Section title={social.title} route={social.route} img={social.img}/>
+            <Section title={jobsearch.title} route={jobsearch.route} img={jobsearch.img}/>
+          </div>  
           <br />
           <br />
           <br />
           <br />
-          
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <Link to="/projects">
-                <img className="img" src="../images/macbook.png" alt="Generic placeholder image" width="140" height="140" />
-                <h2>Projects</h2>
-              </Link>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <Link to="/docs">
-                <img className="img" src="../images/folder.png" alt="Generic placeholder image" width="140" height="140" />
-                <h2>Docs</h2>
-              </Link>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <Link to="/reference">
-                <img className="img" src="../images/id-card.png" alt="Generic placeholder image" width="140" height="140" />
-                <h2>References</h2>
-              </Link>
-            </div>
+            <Section title={projects.title} route={projects.route} img={projects.img}/>
+            <Section title={docs.title} route={docs.route} img={docs.img}/>
+            <Section title={references.title} route={references.route} img={references.img}/>
           </div>
-
         </div>
       </div>
     );
