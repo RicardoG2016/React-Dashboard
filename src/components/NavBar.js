@@ -43,25 +43,23 @@ export default class NavBar extends React.Component {
                           </ul>
 
                           <ul className="nav navbar-nav navbar-right">
-                          <li><a className="premium" href="#">PREMIUM</a></li>
+                          <li><Link to="/premium"><span className="premium">PREMIUM</span></Link></li>
                             <li className="dropdown">
                               <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img className="img" src="../images/m.png" alt="Generic placeholder image" width="20" height="20" /> </a>
                               <ul className="dropdown-menu" role="menu">
-                                <li><a href="#">Review</a></li>
-                                <li><a href="#">Social</a></li>
-                                <li><a href="#">Jobs</a></li>
-                                <li><a href="#">Projects</a></li>
-                                <li><a href="#">Docs</a></li>
-                                <li><a href="#">References</a></li>
+                                <li><Link to="/review"><span className="premium">Review</span></Link></li>
+                                <li><Link to="/social"><span className="premium">Social</span></Link></li>
+                                <li><Link to="/jobsearch"><span className="premium">Job Search</span></Link></li>
+                                <li><Link to="/project"><span className="premium">Projects</span></Link></li>
+                                <li><Link to="/docs"><span className="premium">Docs</span></Link></li>
+                                <li><Link to="/references"><span className="premium">References</span></Link></li>
                                 <li className="divider"></li>
-                                <li><a href="#">Gifts</a></li>
-                                <li><a href="#">Premium</a></li>
+                                <li><Link to="/premium"><span className="premium">PREMIUM</span></Link></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">Settings</a></li>
                               </ul>
                             </li>
                             <li><a href="#"><img className="img" src="../images/chat.png" alt="Generic placeholder image" width="20" height="20" /></a></li>
-                            <li><a href="#"><img className="img" src="../images/gift.png" alt="Generic placeholder image" width="20" height="20" /></a></li>
                             <li className="active"><a href="#"><img className="img" src="../images/alarm.png" alt="Generic placeholder image" width="20" height="20" /> <span className="sr-only">(current)</span></a></li>
                             <li><a href="#">Sign In</a></li>
                             <li><a href="#">|</a></li>

@@ -9,10 +9,12 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="dash">
-<br />
-<br />
-<br />
-<br />
+        
+        <br />
+        <br />
+        <br />
+        <br />
+
         <div className="container marketing">
           <div className="row">
             <div className="col-lg-4 col-md-6">
@@ -34,10 +36,12 @@ class Dashboard extends React.Component {
               </Link>
             </div>
           </div>
-<br />
-<br />
-<br />
-<br />
+
+          <br />
+          <br />
+          <br />
+          <br />
+          
           <div className="row">
             <div className="col-lg-4 col-md-6">
               <Link to="/projects">
