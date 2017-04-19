@@ -4,7 +4,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-
+import Dashboard from './Dashboard'
 // import { Nav, Button, ButtonGroup, NavDropdown, NavItem, MenuItem } from 'react-bootstrap';
 
 export default class NavBar extends React.Component {

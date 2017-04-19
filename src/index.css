@@ -18,7 +18,7 @@ nav.navbar.navbar-default{
   padding-right: 15px;
 }
 
-a.navbar-brand.word{
+span.navbar-brand.word{
   padding-left: 3px;
   color: #07c284;
 }
